@@ -5,8 +5,8 @@ import java.io.*;
 public class TesteLeitura {
     public static void main(String[] args) throws IOException {
 
-        InputStream file  = new FileInputStream("lorem.txt");
-        Reader isr = new InputStreamReader(file);
+        InputStream fis  = new FileInputStream("lorem.txt");
+        Reader isr = new InputStreamReader(fis);
         BufferedReader br = new BufferedReader(isr);
 
         String line = br.readLine();
